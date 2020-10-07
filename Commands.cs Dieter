@@ -1,0 +1,25 @@
+using Discord.Commands;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Discord.Commands;
+using System.Threading.Tasks;
+
+namespace DiscordBot.Modules
+{
+    public class Commands : ModuleBase<SocketCommandContext>
+    {
+        [Command("#command van gebruiker")]
+        public async Task #naam#()
+        {
+            await ReplyAsync("#wat de bot terug stuurt");
+        }
+        
+        [Command("ping")]
+        public async Task Ping()
+        {
+            await ReplyAsync("Pong");
+        }
+        
+    }
+}
